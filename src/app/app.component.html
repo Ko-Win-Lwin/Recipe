@@ -1,1 +1,6 @@
-<app-header></app-header>
+<div>
+    <app-header (routerEvent)="route($event)"></app-header>
+
+    <app-recipes *ngIf="param === 'recipe'"></app-recipes>
+    <app-shopping-list *ngIf="param !== 'recipe'"></app-shopping-list>
+</div>

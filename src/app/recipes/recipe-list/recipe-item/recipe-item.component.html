@@ -1,1 +1,15 @@
-<p>recipe-item works!</p>
+<div class="container-fluid border">
+    <div class="row">
+        <div class="col-xs-12">
+            <a href="#" (click)="showDetail(recipe)" class="list-group-item clearfix">
+                <div class="float-start">
+                    <h4 class="fs-4">{{ recipe.name }}</h4>
+                    <p>{{ recipe.detail }}</p>
+                </div>
+                <span class="float-end">
+                    <img src="{{ recipe.url }}" class="img-responsive" style="max-height: 80px;" alt="">
+                </span>
+            </a>
+        </div>
+    </div>
+</div>

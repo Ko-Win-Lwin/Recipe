@@ -1,1 +1,4 @@
-<p>recipe-list works!</p>
+<div class="container">
+    <app-recipe-item *ngFor="let recipe of recipes" [recipe]="recipe"
+        (detailEvent)="showDetail($event)"></app-recipe-item>
+</div>

@@ -1,1 +1,30 @@
-<p>recipe-detail works!</p>
+<div class="row">
+    <div class="col-xs-12">
+        <img src="{{ recipe.url ?? 'https://images.immediate.co.uk/production/volatile/sites/30/2020/08/chorizo-mozarella-gnocchi-bake-cropped-9ab73a3.jpg?quality=90&webp=true&resize=300,272'}}"
+            class="img-responsive" alt="">
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-12">
+        <h4>{{ recipe.name ?? "Recipe name" }}</h4>
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-12">
+        <div class="btn-group">
+            <button appDropdown class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown ">Manage Recipe <span
+                    class="caret"></span></button>
+            <ul class="dropdown-menu">
+                <li>
+                    <a class="dropdown-item" chref="#">To Shopping List</a>
+                </li>
+                <li>
+                    <a class="dropdown-item" href="#">Edit Recipe</a>
+                </li>
+                <li>
+                    <a class="dropdown-item" href="#">Delete Recipe</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

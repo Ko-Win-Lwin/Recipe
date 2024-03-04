@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'recipe';
+  public param: string = 'recipe';
+
+  route(param: string) {
+    this.param = param;
+  }
 }

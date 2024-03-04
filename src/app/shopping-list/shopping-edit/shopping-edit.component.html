@@ -1,1 +1,23 @@
-<p>shopping-edit works!</p>
+<div class="row">
+    <div class="col-xs-12">
+        <form>
+            <div class="row">
+                <div class="col-sm-5 form-group">
+                    <label for="name">Name</label>
+                    <input [(ngModel)]="ingridient.name" type="text" name="name" id="name" class="form-control">
+                </div>
+                <div class="col-sm-2 form-group">
+                    <label for="amount">Amount</label>
+                    <input [(ngModel)]="ingridient.amount" type="text" id="amount" name="amount" class="form-control">
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-xs-12 d-flex gap-4">
+                    <button class="btn btn-success" type="submit" (click)="addItem(ingridient)">Add</button>
+                    <button class="btn btn-danger" type="submit" (click)="deleteItem(ingridient)">Delete</button>
+                    <button class="btn btn-primary" type="submit" (click)="editItem(ingridient)">Edit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
